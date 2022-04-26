@@ -316,21 +316,30 @@
             </button>
             <p class="signup-form-title">Zostaw swoje dane w formularzu poniżej</p>
             <form name="signup-form" autocomplete="on" novalidate>
-                <label>
+                <label class="signup-form-field">
                     Imie
-                    <input type="text" name="name-signup" />
+                    <input class="signup-form-input" type="text" name="name-signup" />
+                    <svg class="signup-form-icon">
+                        <use href="./images/sprite.svg#icon-person"></use>
+                    </svg>
                 </label>
-                <label>
+                <label class="signup-form-field">
                     Telefon
-                    <input type="tel" name="phone-signup" />
+                    <input class="signup-form-input" type="tel" name="phone-signup" />
+                    <svg class="signup-form-icon">
+                        <use href="./images/sprite.svg#icon-phone"></use>
+                    </svg>
                 </label>
-                <label>
+                <label class="signup-form-field">
                     Email
-                    <input type="email" name="email-sign-up" />
+                    <input class="signup-form-input" type="email" name="email-sign-up" />
+                    <svg class="signup-form-icon">
+                        <use href="./images/sprite.svg#icon-email"></use>
+                    </svg>
                 </label>
-                <label>
+                <label class="signup-form-field">
                     Komentarz
-                    <textarea name="comment-signup" rows="5" placeholder="Wprowadź tekst"></textarea>
+                    <textarea class="signup-form-comment" name="comment-signup" cols="30" rows="10" placeholder="Wprowadź tekst"></textarea>
                 </label>
 
                 <label class="form-policy-text">
