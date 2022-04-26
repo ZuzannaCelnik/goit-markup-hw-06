@@ -783,20 +783,45 @@ img{
 .signup-form{
     display: block;
     /* display: flex; */
-    width: 100%;
+    /* width: 100%; */
     flex-direction: column;
+    margin-left: 40px;
 }
-.signup-form-field{}
+.signup-form-field{
+    color: var(--main-grey);
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 1%;
+    margin-bottom: 10px;
+}
+.signup-form-input-wrapper{
+    display: block;
+    position: relative;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
 .signup-form-input{
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
 }
+.signup-form-input:focus{
+    border-color: var(--brand-blue);
+    outline: none;
+}
+.signup-form-input:focus + .signup-form-icon{
+    fill: var(--brand-blue);
+}
 .signup-form-icon{
     width: 18px;
     height: 18px;
     fill: var(--main-black);
+    position: absolute;
+    left: 12px;
+    /* transform: translateY(-50%); */
+
 }
+.signup-form-area-wrapper{}
 .signup-form-comment{
     width: 448px;
     height: 120px;

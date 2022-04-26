@@ -315,35 +315,46 @@
                 </svg>
             </button>
             <p class="signup-form-title">Zostaw swoje dane w formularzu poniżej</p>
-            <form name="signup-form" autocomplete="on" novalidate>
+            <form class="signup-form" name="signup-form" autocomplete="on" novalidate>
                 <label class="signup-form-field">
                     Imie
-                    <input class="signup-form-input" type="text" name="name-signup" />
+                    <span class="signup-form-input-wrapper">
+                        <input class="signup-form-input" type="text" name="name-signup" />
                     <svg class="signup-form-icon">
                         <use href="./images/sprite.svg#icon-person"></use>
                     </svg>
+                    </span>                    
                 </label>
                 <label class="signup-form-field">
                     Telefon
-                    <input class="signup-form-input" type="tel" name="phone-signup" />
+                    <span class="signup-form-input-wrapper">
+                        <input class="signup-form-input" type="tel" name="phone-signup" />
                     <svg class="signup-form-icon">
                         <use href="./images/sprite.svg#icon-phone"></use>
                     </svg>
+                    </span>                    
                 </label>
                 <label class="signup-form-field">
                     Email
-                    <input class="signup-form-input" type="email" name="email-sign-up" />
-                    <svg class="signup-form-icon">
-                        <use href="./images/sprite.svg#icon-email"></use>
-                    </svg>
+                    <span class="signup-form-input-wrapper">
+                        <input class="signup-form-input" type="email" name="email-sign-up" />
+                        <svg class="signup-form-icon">
+                            <use href="./images/sprite.svg#icon-email"></use>
+                        </svg>
+                    </span>
                 </label>
                 <label class="signup-form-field">
                     Komentarz
-                    <textarea class="signup-form-comment" name="comment-signup" cols="30" rows="10" placeholder="Wprowadź tekst"></textarea>
+                    <span class="signup-form-area-wrapper">
+                        <textarea class="signup-form-comment" name="comment-signup" cols="30" rows="10" placeholder="Wprowadź tekst"></textarea>
+                    </span>
                 </label>
 
                 <label class="form-policy-text">
                     <input class="form-checkbox-policy" type="checkbox" name="policy">
+                   <span class="signup-form-input-wrapper">
+
+                   </span>
                     Oświadczam iż akceptuję <span>
                         <a href="#">Regulamin</a> 
                     </span> i <span> 
