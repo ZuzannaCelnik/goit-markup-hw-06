@@ -680,6 +680,22 @@ img{
     fill: var(--white);
 }
 
+.footer-newsletter{
+    margin-left: 78px;
+}
+.footer-form{}
+.footer-sign-title{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3%;
+    line-height: 1.143;
+    text-transform: uppercase;
+    color: var(--white);
+}
+.footer-email{
+    background-color: transparent;
+}
+
 /* OKNO MODALNE */
 .backdrop{
     position: fixed;
@@ -724,4 +740,29 @@ img{
 }
 .close-btn:hover{
     cursor: pointer;
+}
+.signup-form-title{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3%;
+    line-height: 1.15;
+    text-align: center;
+}
+.signup-form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.form-policy-text::before{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.form-checkbox-policy:checked
+.form-policy-text::before{
+    background-color: var(--brand-blue);
+    border: none;
 }

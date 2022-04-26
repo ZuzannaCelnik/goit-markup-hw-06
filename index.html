@@ -296,6 +296,16 @@
                     </a></li>
                 </ul>
             </div>
+            <div>
+                <form name="footer-form" autocomplete="on" novalidate>
+                    <p class="footer-sign-title">Zapisz się do newslettera</p>
+                    <label class="footer-email">
+                        <input type="email" name="email-footer-form" />
+                    </label>
+                    <button class="button-footer-form" type="button">Zapisz się</button> 
+    
+                </form>
+            </div>
         </div>
     </footer> 
     <div class="backdrop is-hidden" data-modal>
@@ -305,6 +315,34 @@
                     <use href="./images/sprite.svg#icon-close-btn"></use>
                 </svg>
             </button>
+            <p class="signup-form-title">Zostaw swoje dane w formularzu poniżej</p>
+            <form name="signup-form" autocomplete="on" novalidate>
+                <label>
+                    Imie
+                    <input type="text" name="name-signup" />
+                </label>
+                <label>
+                    Telefon
+                    <input type="tel" name="phone-signup" />
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email-sign-up" />
+                </label>
+                <label>
+                    Komentarz
+                    <textarea name="comment-signup" rows="5" placeholder="Wprowadź tekst"></textarea>
+                </label>
+
+                <label class="form-policy-text">
+                    <input class="form-checkbox-policy" type="checkbox" name="policy">
+                    Oświadczam iż akceptuję <span>
+                        <a href="#">Regulamin</a> 
+                    </span> i <span> 
+                        <a href="#">Prywatności.</a></span> 
+                </label>
+                <button type="submit">Wyślij</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
