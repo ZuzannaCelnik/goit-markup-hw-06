@@ -266,7 +266,7 @@
             <div class="footer">
              <a class="footer-logo" href="index.html"><span class="logo-web">Web</span>Studio</a>
              <address class="footer-address"> 
-                m. Warszawa, Aleje Jerozolimskie 21 <br>
+                m. Warszawa, Aleje Jerozolimskie 21<br>
                 <a class="footer-link" href="mailto:info@example.com">info@example.com</a><br>
                 <a class="footer-link" href="tel:48111111111">+48 111 111 111</a>
             </address>
@@ -297,8 +297,8 @@
                 </ul>
             </div>
             <div class="footer-newsletter">
-                <form name="footer-form" autocomplete="on" novalidate>
-                    <p class="footer-sign-title">Zapisz się do newslettera</p>
+                <p class="footer-sign-title">Zapisz się do newslettera</p>
+                <form class="footer-newsletter-form" name="footer-form" autocomplete="on" novalidate>
                     <input class="footer-email" type="email" name="email-footer-form" placeholder="E-mail" />
                     <button class="button-footer-form" type="submit">Zapisz się 
                         <svg class="footer-submit-icon">
@@ -349,16 +349,12 @@
                         <textarea class="signup-form-comment" name="comment-signup" cols="30" rows="10" placeholder="Wprowadź tekst"></textarea>
                     </span>
                 </label>
-
-                <label class="form-policy-text">
-                    <input class="form-checkbox-policy" type="checkbox" name="policy">
-                   <span class="signup-form-input-wrapper">
-                    Oświadczam iż akceptuję <span>
-                        <a href="#">Regulamin</a> 
-                    </span> i <span> 
-                        <a href="#">Prywatności.</a></span>
-                   </span>                     
-                </label>
+                <span class="form-policy-wrapper">
+                    <input class="form-checkbox-policy check-hidden" id="user-policy" type="checkbox" name="policy" value="policy">
+                    <label for="user-policy" class="form-policy-text">
+                        Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a>
+                    </label>
+                </span>                                                        
                 <button class="form-button" type="submit">Wyślij</button>
             </form>
         </div>
